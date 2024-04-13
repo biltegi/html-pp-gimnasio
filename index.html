@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Tablas - Jon</title>
+    <style>
+        body {
+            max-width: 960px;
+            height: 80vh;
+            padding: 15px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            font-size: 15px;
+            border-collapse: collapse;
+            border: 2px solid rgb(140 140 140);
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+        }
+
+        caption {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+        <caption>
+            ⚔️ Gimnasio El Gordo Gervasio
+        </caption>
+        <thead>
+            <tr>
+                <th scope="row" colspan="3">Invoice #123456789</th>
+                <th scope="row" colspan="1">14 January 2025</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row" colspan="2"><b>Pay to:</b> <br> Acme Billing Co. <br> 123 Main St. <br> Cityville, NA
+                    12345</td>
+                <td scope="row" colspan="2"><b>Customer:</b> <br> John Smith <br> 321 Willow Way <br> Southeast
+                    Northwestershire, MA 54321</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="1">Name / Description</th>
+                <th scope="row" colspan="1">Qty.</th>
+                <th scope="row" colspan="1">@</th>
+                <th scope="row" colspan="1">Cost</th>
+            </tr>
+            <tr>
+                <td scope="row" colspan="1">Paperclips</td>
+                <td scope="row" colspan="1">1000</td>
+                <td scope="row" colspan="1">0.01</td>
+                <td scope="row" colspan="1">10.00</td>
+            </tr>
+            <tr>
+                <td scope="row" colspan="1">Staples (box)</td>
+                <td scope="row" colspan="1">100</td>
+                <td scope="row" colspan="1">1.00</td>
+                <td scope="row" colspan="1">100.00</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="3">SubTotal</th>
+                <td scope="row" colspan="1">110.00</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Tax</th>
+                <td scope="row" colspan="1">8%</td>
+                <td scope="row" colspan="1">8.80</td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">Grand Total</th>
+                <td>$ 118.80</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
